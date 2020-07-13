@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Lets Upgrade</titile>
+<title>Lets Upgrade</title>
 </head>
 <body>
 <script src="https://momentjs.com/downloads/moment.js"></script>
 <h2>Lets upgrade Day 2: Assignment 1</h2>
 
 <p>Today is: <span id="today"></span></p>
-<p>Current time is :<span id="time"></span></p>
+<p>Current time is : <span id="time"></span></p>
 
 <h2>Lets upgrade Day 2: Assignment 2</h2>
 
-<button onclick="print()" id="content">Print</button>
+<button onClick="window.print()" id="content">Print</button>
 
 <h2>Lets upgrade Day 2: Assignment 3</h2>
 
@@ -25,17 +25,13 @@
 
 var d = new Date();
 
-document.getElementById("today").innerHTML = d.toLocaLetsring('en-us', {weekday:'long'});
+document.getElementById("today").innerHTML = d.toLocaleString('en-us', { weekday:'long'});
 document.getElementById("time").innerHTML = d.getHours() +":"+d.getMinutes()+":"+d.getSeconds();
 
 document.getElementById("m-d-y").innerHTML = moment().format("MM-DD-yyyy");
 document.getElementById("m/d/y").innerHTML = moment().format("MM/DD/yyyy");
 document.getElementById("d-m-y").innerHTML = moment().format("DD-MM-YYYY");
 document.getElementById("d/m/y").innerHTML = moment().format("DD/MM/YYYY");
-
-print(){
-    window.print();
-}
 
 </script>
 </body>
