@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Input</h2>
+<input type="number" id="input" />
+<button onclick="submit()">Submit to console</button>
+<p id="output"></p>
+<script>
+
+function submit(){
+    if(document.getElementById("input").value>21)
+    {
+        document.getElementById("output").innerHTML="Can drink";
+        console.log("Can drink");
+    }else{
+        document.getElementById("output").innerHTML="Cannot drink";
+        console.log("Cannot drink");
+    }
+}
+</script>
+
+</body>
+</html>
