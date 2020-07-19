@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <script>
+        function calc(val) {
+            document.getElementById("result").value += val
+        }
+
+        function solve() {
+            let x = document.getElementById("result").value
+            let y = eval(x)
+            document.getElementById("result").value = y
+        }
+
+
+        function clr() {
+            document.getElementById("result").value = ""
+        }
+    </script>
+    <style>
+        table {
+            border: 2px solid black;
+        }
+        
+        .title {
+            margin-bottom: 10px;
+            text-align: center;
+            width: 210px;
+            border: solid black 2px;
+        }
+        
+        input[type="button"] {
+            background-color: white;
+            color: black;
+            width: 100%
+        }
+        
+        input[type="text"] {
+            background-color: white;
+            width: 100%
+        }
+        
+        td {
+            padding: 24px;
+            border: 1px solid;
+        }
+        
+        input {
+            font-size: 26px;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=t itle>Calculator</div>
+    <table>
+        <tr>
+            <td colspan="3"><input type="text" id="result" /></td>
+            <td><input type="button" value="c" onclick="clr()" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="calc('1')" /> </td>
+            <td><input type="button" value="2" onclick="calc('2')" /> </td>
+            <td><input type="button" value="3" onclick="calc('3')" /> </td>
+            <td><input type="button" value="/" onclick="calc('/')" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="calc('4')" /> </td>
+            <td><input type="button" value="5" onclick="calc('5')" /> </td>
+            <td><input type="button" value="6" onclick="calc('6')" /> </td>
+            <td><input type="button" value="-" onclick="calc('-')" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="calc('7')" /> </td>
+            <td><input type="button" value="8" onclick="calc('8')" /> </td>
+            <td><input type="button" value="9" onclick="calc('9')" /> </td>
+            <td><input type="button" value="+" onclick="calc('+')" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="calc('0')" /> </td>
+            <td><input type="button" value="%" onclick="calc('%')" /> </td>
+            <td><input type="button" value="=" onclick="solve()" /> </td>
+            <td><input type="button" value="*" onclick="calc('*')" /> </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Destructuring objects</title>
+</head>
+
+<body>
+    <script>
+        const student = {
+            name: "Helsink",
+            age: 24,
+            projects: {
+                diceGame: "Two player dice game using javascript"
+            }
+        }
+        const {
+            name,
+            age,
+            projects: {
+                diceGame
+            }
+        } = student;
+        console.log(name, age, diceGame)
+    </script>
+</body>
+
+</html>
