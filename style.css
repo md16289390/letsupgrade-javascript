@@ -1,0 +1,12 @@
+ol li>button {
+    float: right
+}
+
+#my-list {
+    width: 20%;
+}
+
+ol>li {
+    clear: right;
+    padding: 5px;
+}
